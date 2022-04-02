@@ -1,0 +1,29 @@
+<svg width="410" height="190" viewBox="0 0 410 190" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="5.03361" y="1.03361" width="403.933" height="30.9328" fill="url(#pattern0)" stroke="black" stroke-width="2.06721"/>
+<rect x="39.0336" y="32.0336" width="369.933" height="30.9328" fill="url(#pattern1)" stroke="black" stroke-width="2.06721"/>
+<rect x="1.03361" y="-1.03361" width="384.933" height="31.9328" transform="matrix(1 0 0 -1 23 93.9328)" fill="url(#pattern2)" stroke="black" stroke-width="2.06721"/>
+<rect x="1.03361" y="-1.03361" width="407.933" height="30.9328" transform="matrix(1 0 0 -1 0 124.933)" fill="url(#pattern3)" stroke="black" stroke-width="2.06721"/>
+<rect x="1.03361" y="-1.03361" width="385.933" height="31.9328" transform="matrix(1 0 0 -1 22 156.933)" fill="url(#pattern4)" stroke="black" stroke-width="2.06721"/>
+<rect x="1.03361" y="-1.03361" width="359.933" height="30.9328" transform="matrix(1 0 0 -1 48 187.933)" fill="url(#pattern5)" stroke="black" stroke-width="2.06721"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.498982" height="4.00914">
+<use xlink:href="#image0_1636_9449" transform="scale(0.00254583 0.0313214)"/>
+</pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="0.544588" height="4.00914">
+<use xlink:href="#image0_1636_9449" transform="scale(0.00277851 0.0313214)"/>
+</pattern>
+<pattern id="pattern2" patternContentUnits="objectBoundingBox" width="0.52348" height="3.89122">
+<use xlink:href="#image0_1636_9449" transform="scale(0.00267082 0.0304002)"/>
+</pattern>
+<pattern id="pattern3" patternContentUnits="objectBoundingBox" width="0.494114" height="4.00914">
+<use xlink:href="#image0_1636_9449" transform="scale(0.00252099 0.0313214)"/>
+</pattern>
+<pattern id="pattern4" patternContentUnits="objectBoundingBox" width="0.522131" height="3.89122">
+<use xlink:href="#image0_1636_9449" transform="scale(0.00266393 0.0304002)"/>
+</pattern>
+<pattern id="pattern5" patternContentUnits="objectBoundingBox" width="0.559632" height="4.00914">
+<use xlink:href="#image0_1636_9449" transform="scale(0.00285527 0.0313214)"/>
+</pattern>
+<image id="image0_1636_9449" width="196" height="128" xlink:href="data:image/png;base64,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"/>
+</defs>
+</svg>

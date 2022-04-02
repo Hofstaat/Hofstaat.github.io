@@ -1,0 +1,857 @@
+$tabletBreakPoint: 650px;
+
+@mixin centerAbs {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+// :root {
+//     --gird-rows-and-colms: 10;
+//     --back-color: rgb(22, 29, 64);
+// }
+*{  
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+li:last-child{
+    margin-bottom: 0;
+}
+
+@mixin stdFont{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #000000;
+}
+
+
+button{
+    background: none;
+    border: none;
+}
+a, button:focus{
+    outline-color:  red;
+}
+//header
+header{
+    overflow: hidden;
+    position: relative;
+    padding-top: 530px;
+    padding-bottom: 70px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    
+    background: url("../img/DeckblattCards.svg") no-repeat center 0, linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
+    @media (min-width: $tabletBreakPoint){
+        background: url("../img/headerImgBig.svg") no-repeat center 0, linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
+    }
+}
+
+#headerImg{
+    position: absolute;
+    // top: 0;
+    // left: 50%;
+    // transform: translate(-50%);
+
+    // width: 100%;
+    // height: 100%;
+    // background: url("../img/DeckblattCards.svg") no-repeat center 0;
+}
+
+.headerContent{
+    position: relative;
+    padding-top: 530px;
+    padding-bottom: 70px;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#downloadButton{
+    position: relative;
+    width: 315.79px;
+    height: 76px;
+    cursor: pointer;
+}
+
+#description{
+    width: 282px;
+    @media (min-width: $tabletBreakPoint){
+        width: 509px;
+    }
+    height: 75px;
+
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+.icongroup{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 230px;
+
+    @media (min-width: $tabletBreakPoint){
+        width: 510px;
+        height: 100px;
+        flex-wrap: nowrap;
+    }
+
+    font-family: 'Rum Raisin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+.icon{
+    flex: 50%;
+    //width: 50%;
+    position: relative;
+    display: flex;
+    
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+section#beginning{
+    background: #C7BDA6;
+    padding-bottom: 50px;
+}
+
+.headline1{
+    position: relative;
+    height: 44px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 3px solid #958E7C;
+    border-bottom: 3px solid #958E7C;
+
+    background: url("../img/headlineSymbols.svg") no-repeat center, #C7BDA6;
+
+}
+
+.headline1 h1{
+    padding-left: 0.635em;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.635em;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+h2{
+    color: white;
+
+    font-family: 'Rum Raisin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+}
+
+.arrowBanner{
+    overflow: visible;
+    position: relative;
+    width: 236px;
+    height: 48px;
+    margin-bottom: 12px;
+
+    &::before{
+        position: absolute;
+        content: '';
+        width: 255px;
+        height: 48px;
+        background: url("../img/arrowBanner.svg") no-repeat left center;
+    }
+    h2{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+#goal{
+    width: 295px;
+}
+.goalBanner{
+    overflow: visible;
+    position: relative;
+    width: 250px;
+    height: 49px;
+    margin-bottom: 12px;
+
+    &::before{
+        position: absolute;
+        content: '';
+        width: 265px;
+        height: 55px;
+        background: url("../img/goalBanner.svg") no-repeat left center;
+    }
+    h2{
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+}
+
+
+.contentWrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 280px;
+    @media (min-width: $tabletBreakPoint){
+        width: 566px;
+    }
+
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#gameSetup ul li {
+    background: url("../img/bulletpoint.svg") no-repeat left 2px;
+    padding: 0px 0px 0px 22px;
+    list-style: none;
+    margin-bottom: 14px;
+    @include stdFont();
+    
+
+    @media (min-width: $tabletBreakPoint){
+        width: 280px;
+        float: left;
+    }
+  }
+
+
+
+ul.spielanfang li{
+    list-style: none;
+    margin-bottom: 14px;
+
+    @include stdFont();
+    padding: 0px 0px 0px 70px;
+
+    &:nth-child(1){
+        background: url("../img/firstSymbol.svg") no-repeat 15px;
+    }
+    &:nth-child(2){
+        background: url("../img/3BlancCards.svg") no-repeat left;
+    }
+    &:nth-child(3){
+        background: url("../img/RoundArrow.svg") no-repeat 10px;
+    }
+}
+
+#goalPaper{
+    position: relative;
+    width: 268px;
+    height: 267px;
+    background: url("../img/Paper.png") no-repeat center;
+    background-size: contain;
+
+    & ul{
+        @include centerAbs();
+        list-style: none;
+        width: 212px;
+        text-align: center;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 19.6548px;
+        line-height: 23px;
+
+        & li:not(:last-child){
+            margin-bottom: 26px;
+        }
+    }
+
+}
+
+.stdText{
+    @include stdFont();
+}
+
+section#turn{
+    background: #EFE5CB;
+    padding-bottom: 50px;
+}
+
+.longBanner{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #C62222;
+
+    &::before{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        content: '';
+        border-top: 4px solid #FFEF60;
+        border-bottom: 4px solid #FFEF60;
+        height: 32px;
+        width: 100%;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 130%;
+        top: -10%;
+        background: url("../img/longBannerFront.svg") no-repeat center;
+        
+    }
+
+    *{
+        z-index: 1;
+    }
+
+
+
+    &.extreme{
+        background: #651C9F;
+        z-index: 1;
+        &::after{
+        background: url("../img/ExtremeBanner.svg") no-repeat center;
+        }
+    }
+
+}
+
+
+#overview{
+    @include stdFont();
+    text-align: center;
+    margin-top: 30px;
+    #or {
+        color:#C62222;
+        font-weight: bold;
+        font-style: italic;
+        padding: 12px;
+    }
+    #turn2{
+        margin-top: 30px;
+    }
+}
+
+
+#limit{
+
+   h2{
+    width: 100%;
+    text-align: left;
+    color: #C62222;
+   } 
+   h2 span{
+       color:#000000;
+   }
+} 
+
+#wedding{
+
+  img{
+       margin-top: -40px;
+       margin-left: 130px;
+   }  
+}
+
+.weddingBanner{
+    overflow: visible;
+    position: relative;
+    width: 271px;
+    height: 52px;
+    margin-bottom: 12px;
+
+    &::before{
+        position: absolute;
+        content: '';
+        width: 291px;
+        height: 70px;
+        background: url("../img/BannerWedding.svg") no-repeat left center;
+    }
+    h2{
+        //width: 100%;
+        white-space: nowrap;
+        position: absolute;
+        top: 64%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+}
+
+section#skatCards{
+    background: #EFE5CB;
+    padding-bottom: 50px;
+}
+
+#cardtext{
+
+    width: 271px;
+    margin: 55px;
+    margin: 40px auto 0;
+
+    color: white;
+
+    font-family: 'Rum Raisin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.9816px;
+    //line-height: 26px;
+    letter-spacing: 0.065em;
+
+    color: #958E7C;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span:first-child{
+        font-size: 58.6959px;
+        line-height: 50px;
+    }
+}
+
+@mixin wavyBanner($img){
+    overflow: visible;
+    position: relative;
+    width: 240px;
+    height: 48px;
+    margin-bottom: 12px;
+
+    &::after{
+        position: absolute;
+        content: '';
+        width: 260px;
+        height: 68px;
+        background: url($img) no-repeat left center;
+    }
+}
+
+.actionsBanner{
+    @include wavyBanner("../img/aktionskartenBanner.svg");
+}
+.courtBanner{
+    @include wavyBanner("../img/HofkartenBanner.svg");
+}
+
+.specialBanner{
+    @include wavyBanner("../img/SpezialkarteBanner.svg");
+}
+
+.cardgroup{
+    width: 280px;
+
+    margin-top: 20px;
+
+    display: grid;
+    
+    //grid-template-rows: auto auto;
+    column-gap: 15px;
+    row-gap: 5px;
+
+    &:nth-child(even){
+      grid-template-columns: 75px 190px;
+      grid-template-areas: "card headline" "card p";  
+    }
+    &:nth-child(odd){
+        grid-template-columns: 190px 75px;
+        grid-template-areas: "headline card" "p card ";  
+      }
+    
+    //justify-items: center;
+    align-items: center;
+      
+    p {@include stdFont; grid-area: p; 
+        align-self: flex-start;}
+      
+    .cardName { grid-area: headline; 
+        align-self: flex-end;}
+      
+    .card {
+            grid-area: card; 
+            filter: drop-shadow(0px 7.42799px 7.42799px rgba(0, 0, 0, 0.25));
+            transform-origin: center center;
+        }
+
+    &#c7 .card { transform: rotate(-15.93deg);}
+    &#c8 .card { transform: rotate(14.01deg);}
+    &#c9 .card { transform: rotate(-10.99deg);}
+    &#c10 .card { transform: rotate(14.75deg);}
+
+    &#cBube{ 
+        .card{  transform: rotate(-17.16deg);}
+        p{color:#958E7C;}
+    }
+    &#cQueen .card { transform: rotate(16.76deg);}
+    &#cKing .card { transform: rotate(-8.32deg);}
+
+    &#cAce .card {align-self:flex-start;}
+
+    //extreme
+
+    &#c2 .card { transform: rotate(-17.9deg);}
+    &#c3 .card { transform: rotate(15.33deg);}
+    &#c4 .card { transform: rotate(-9.14deg);}
+    &#c5 .card { transform: rotate(17.13deg);}
+    &#c6 .card { transform: rotate(-11.45deg);}
+    &#cJoker .card { transform: rotate(7.68deg);
+        align-self:flex-start;}
+    
+}
+
+
+
+section#extreme{
+    background: #CCCCCC;
+
+    .cardgroup{
+        &:nth-child(odd){
+          grid-template-columns: 75px 190px;
+          grid-template-areas: "card headline" "card p";  
+        }
+        &:nth-child(even){
+            grid-template-columns: 190px 75px;
+            grid-template-areas: "headline card" "p card ";  
+          }
+    }
+}
+
+#extremeActions{
+   margin-top: -50px;
+}
+
+#extremeHeader{
+    position: relative;
+    height:292px;
+    width: 100%;
+    margin-top: -20px;
+}
+
+#extremeIntroText{
+    @include centerAbs();
+    top: 164px;
+    width: 205px;
+    height: 170px;
+
+    text-align: center;
+    -webkit-text-stroke: 2px #000000;
+    text-stroke: 2px #000000;
+    color: white;
+
+    font-family: 'Rum Raisin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+
+    
+}
+
+
+.extremeHeaderbackground{
+
+    image-rendering: pixelated;
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .darkBackWall{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        .top{
+            position: relative;
+            background: url("../img/WallTextureDark.png");
+            height: 238px;
+            width: 100%;
+           // transform: translateX(-5%);
+            border-top: #000000 solid 2px;
+            border-bottom: #000000 solid 2px;
+            
+        }
+
+        .wall {
+            position: absolute;
+            top: 236px;
+            height: 28px;
+            border: #000000 solid 1px;
+            background: url("../img/WallTextureDark.png");
+          }
+          
+          .w1,.w2 {
+                    transform: rotate(180deg);
+          }
+          
+          .w3, .w4 {
+            right: 0;
+          }
+          
+          .w2, .w4 {
+            top: 262px;
+          }
+          
+          .w1 {
+            width: 120px;
+          }
+          
+          .w2 {
+            width: 100px;
+          }
+          
+          .w3 {
+            width: 66px;
+          }
+          
+          .w4 {
+            width: 45px;
+          }
+    
+    }
+    
+    .lightFrontWall{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+       // z-index: 1;
+
+        .top{
+            position: relative;
+            background: url("../img/WallTextureLight.png");
+            height: 68px;
+            width: 110%;
+            //transform: translateX(-5%);
+            border-top: #000000 solid 2px;
+            border-bottom: #000000 solid 2px; 
+        }
+
+        .windowQueen{
+            position: absolute;
+            width: 50px;
+            height: 100px;
+            top: 67px;
+            left: 10px;
+            background: url("../img/windowQueen.svg") no-repeat center;
+            background-size: contain;
+        }
+        .torch{
+            position: absolute;
+            width: 25px;
+            height: 75px;
+            top: 116px;
+            right: 52px;
+
+            background: url("../img/torch.svg") no-repeat center;
+            background-size: contain;
+
+        }
+
+        .leftWall{
+            float: left;
+            margin-top: -2px;
+            width: 410px;
+            height: 190px;
+           transform: translateX(-300px);
+            background: url("../img/GreyWallLeft.png") no-repeat;
+        }
+
+        .rightWall{
+            //float: right;
+            margin-top: -2px;
+            margin-left: 100%;
+            width: 410px;
+            height: 190px;
+            transform: translateX(-85px);
+            background: url("../img/GreyWallRight.png") no-repeat top right;
+        }
+        
+
+
+
+    }
+}
+
+.extremeFooterBackground{
+    image-rendering: pixelated;
+
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+
+    .darkBackWall{
+        .bottom{
+            position: absolute;
+            bottom: 0;
+            position: absolute;
+            background: url("../img/WallTextureDark.png");
+            height: 130px;
+            width: 110%;
+            transform: translateX(-5%);
+            border: #000000 solid 1px;
+        }
+
+        .wall{
+            position: absolute;
+            bottom: 130px;
+            height: 28px;
+            border: #000000 solid 1px;
+            background: url("../img/WallTextureDark.png");
+        }
+
+        .w1{
+            bottom: 129px;
+        }
+        .w2{
+            bottom: 156px;
+        }
+
+        .left{
+            transform: rotate(180deg);
+            &.w1{
+                width: 13px;
+            } 
+        }
+        .right{
+            right: 0;
+            &.w1{
+                width: 132px;
+            }
+            &.w2{
+                width: 117px;
+            }
+        }
+        
+
+        
+    }
+
+    .lightFrontWall{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+       // z-index: 1;
+
+        .top{
+            position: absolute;
+            background: url("../img/WallTextureLight.png");
+            height: 68px;
+            width: 110%;
+            transform: translateX(-5%);
+            border: #000000 solid 1px;   
+        }
+
+        .wall{
+            position: absolute;
+            height: 35px;
+            width: 120px;
+            border: #000000 solid 1px;
+            background: url("../img/WallTextureLight.png");
+
+        }
+
+        .w1{
+            bottom: 0;
+        }
+        .w2{
+            bottom: 34px;
+        }
+
+        .left{
+            transform: rotate(180deg);
+            &.w2{
+                width: 44px;
+            }
+            &.w1{
+                width: 106px;
+            }
+        }
+
+        .right{
+            right:0;
+            &.w2{
+                width: 44px;
+            }
+            &.w1{
+                width: 84px;
+            }   
+        }
+
+    }
+
+}
+
+#extremeFooter{
+    position: relative;
+    height:184px;
+    width: 100%;
+    margin-top: -30px;
+}
+
+#extremeOutroText{
+    @include centerAbs();
+    top: 125px;
+
+    text-align: center;
+    -webkit-text-stroke: 2px #000000;
+    text-stroke: 2px #000000;
+    color: white;
+
+    font-family: 'Rum Raisin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+}
+

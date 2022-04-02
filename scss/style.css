@@ -1,0 +1,991 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+a, button:focus {
+  outline-color: red;
+}
+
+header {
+  overflow: hidden;
+  position: relative;
+  padding-top: 530px;
+  padding-bottom: 70px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  background: url("../img/DeckblattCards.svg") no-repeat center 0, -webkit-gradient(linear, left top, left bottom, from(#C7BDA5), color-stop(23.78%, #C7BDA5), color-stop(65.45%, #ECE9E2), to(#EFE5CB));
+  background: url("../img/DeckblattCards.svg") no-repeat center 0, linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
+}
+
+@media (min-width: 650px) {
+  header {
+    background: url("../img/headerImgBig.svg") no-repeat center 0, -webkit-gradient(linear, left top, left bottom, from(#C7BDA5), color-stop(23.78%, #C7BDA5), color-stop(65.45%, #ECE9E2), to(#EFE5CB));
+    background: url("../img/headerImgBig.svg") no-repeat center 0, linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
+  }
+}
+
+#headerImg {
+  position: absolute;
+}
+
+.headerContent {
+  position: relative;
+  padding-top: 530px;
+  padding-bottom: 70px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+#downloadButton {
+  position: relative;
+  width: 315.79px;
+  height: 76px;
+  cursor: pointer;
+}
+
+#description {
+  width: 282px;
+  height: 75px;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+@media (min-width: 650px) {
+  #description {
+    width: 509px;
+  }
+}
+
+.icongroup {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 400px;
+  height: 230px;
+  font-family: 'Rum Raisin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+@media (min-width: 650px) {
+  .icongroup {
+    width: 510px;
+    height: 100px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.icon {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section#beginning {
+  background: #C7BDA6;
+  padding-bottom: 50px;
+}
+
+.headline1 {
+  position: relative;
+  height: 44px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 3px solid #958E7C;
+  border-bottom: 3px solid #958E7C;
+  background: url("../img/headlineSymbols.svg") no-repeat center, #C7BDA6;
+}
+
+.headline1 h1 {
+  padding-left: 0.635em;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.635em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+h2 {
+  color: white;
+  font-family: 'Rum Raisin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+}
+
+.arrowBanner {
+  overflow: visible;
+  position: relative;
+  width: 236px;
+  height: 48px;
+  margin-bottom: 12px;
+}
+
+.arrowBanner::before {
+  position: absolute;
+  content: '';
+  width: 255px;
+  height: 48px;
+  background: url("../img/arrowBanner.svg") no-repeat left center;
+}
+
+.arrowBanner h2 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#goal {
+  width: 295px;
+}
+
+.goalBanner {
+  overflow: visible;
+  position: relative;
+  width: 250px;
+  height: 49px;
+  margin-bottom: 12px;
+}
+
+.goalBanner::before {
+  position: absolute;
+  content: '';
+  width: 265px;
+  height: 55px;
+  background: url("../img/goalBanner.svg") no-repeat left center;
+}
+
+.goalBanner h2 {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.contentWrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+@media (min-width: 650px) {
+  .contentWrapper {
+    width: 566px;
+  }
+}
+
+#gameSetup ul li {
+  background: url("../img/bulletpoint.svg") no-repeat left 2px;
+  padding: 0px 0px 0px 22px;
+  list-style: none;
+  margin-bottom: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+@media (min-width: 650px) {
+  #gameSetup ul li {
+    width: 280px;
+    float: left;
+  }
+}
+
+ul.spielanfang li {
+  list-style: none;
+  margin-bottom: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  padding: 0px 0px 0px 70px;
+}
+
+ul.spielanfang li:nth-child(1) {
+  background: url("../img/firstSymbol.svg") no-repeat 15px;
+}
+
+ul.spielanfang li:nth-child(2) {
+  background: url("../img/3BlancCards.svg") no-repeat left;
+}
+
+ul.spielanfang li:nth-child(3) {
+  background: url("../img/RoundArrow.svg") no-repeat 10px;
+}
+
+#goalPaper {
+  position: relative;
+  width: 268px;
+  height: 267px;
+  background: url("../img/Paper.png") no-repeat center;
+  background-size: contain;
+}
+
+#goalPaper ul {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  list-style: none;
+  width: 212px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19.6548px;
+  line-height: 23px;
+}
+
+#goalPaper ul li:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.stdText {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+section#turn {
+  background: #EFE5CB;
+  padding-bottom: 50px;
+}
+
+.longBanner {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #C62222;
+}
+
+.longBanner::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: '';
+  border-top: 4px solid #FFEF60;
+  border-bottom: 4px solid #FFEF60;
+  height: 32px;
+  width: 100%;
+}
+
+.longBanner::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 130%;
+  top: -10%;
+  background: url("../img/longBannerFront.svg") no-repeat center;
+}
+
+.longBanner * {
+  z-index: 1;
+}
+
+.longBanner.extreme {
+  background: #651C9F;
+  z-index: 1;
+}
+
+.longBanner.extreme::after {
+  background: url("../img/ExtremeBanner.svg") no-repeat center;
+}
+
+#overview {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#overview #or {
+  color: #C62222;
+  font-weight: bold;
+  font-style: italic;
+  padding: 12px;
+}
+
+#overview #turn2 {
+  margin-top: 30px;
+}
+
+#limit h2 {
+  width: 100%;
+  text-align: left;
+  color: #C62222;
+}
+
+#limit h2 span {
+  color: #000000;
+}
+
+#wedding img {
+  margin-top: -40px;
+  margin-left: 130px;
+}
+
+.weddingBanner {
+  overflow: visible;
+  position: relative;
+  width: 271px;
+  height: 52px;
+  margin-bottom: 12px;
+}
+
+.weddingBanner::before {
+  position: absolute;
+  content: '';
+  width: 291px;
+  height: 70px;
+  background: url("../img/BannerWedding.svg") no-repeat left center;
+}
+
+.weddingBanner h2 {
+  white-space: nowrap;
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section#skatCards {
+  background: #EFE5CB;
+  padding-bottom: 50px;
+}
+
+#cardtext {
+  width: 271px;
+  margin: 55px;
+  margin: 40px auto 0;
+  color: white;
+  font-family: 'Rum Raisin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.9816px;
+  letter-spacing: 0.065em;
+  color: #958E7C;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cardtext span:first-child {
+  font-size: 58.6959px;
+  line-height: 50px;
+}
+
+.actionsBanner {
+  overflow: visible;
+  position: relative;
+  width: 240px;
+  height: 48px;
+  margin-bottom: 12px;
+}
+
+.actionsBanner::after {
+  position: absolute;
+  content: '';
+  width: 260px;
+  height: 68px;
+  background: url("../img/aktionskartenBanner.svg") no-repeat left center;
+}
+
+.courtBanner {
+  overflow: visible;
+  position: relative;
+  width: 240px;
+  height: 48px;
+  margin-bottom: 12px;
+}
+
+.courtBanner::after {
+  position: absolute;
+  content: '';
+  width: 260px;
+  height: 68px;
+  background: url("../img/HofkartenBanner.svg") no-repeat left center;
+}
+
+.specialBanner {
+  overflow: visible;
+  position: relative;
+  width: 240px;
+  height: 48px;
+  margin-bottom: 12px;
+}
+
+.specialBanner::after {
+  position: absolute;
+  content: '';
+  width: 260px;
+  height: 68px;
+  background: url("../img/SpezialkarteBanner.svg") no-repeat left center;
+}
+
+.cardgroup {
+  width: 280px;
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardgroup:nth-child(even) {
+  -ms-grid-columns: 75px 190px;
+      grid-template-columns: 75px 190px;
+      grid-template-areas: "card headline" "card p";
+}
+
+.cardgroup:nth-child(odd) {
+  -ms-grid-columns: 190px 75px;
+      grid-template-columns: 190px 75px;
+      grid-template-areas: "headline card" "p card ";
+}
+
+.cardgroup p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: p;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.cardgroup .cardName {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: headline;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.cardgroup .card {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: card;
+  -webkit-filter: drop-shadow(0px 7.42799px 7.42799px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 7.42799px 7.42799px rgba(0, 0, 0, 0.25));
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.cardgroup#c7 .card {
+  -webkit-transform: rotate(-15.93deg);
+          transform: rotate(-15.93deg);
+}
+
+.cardgroup#c8 .card {
+  -webkit-transform: rotate(14.01deg);
+          transform: rotate(14.01deg);
+}
+
+.cardgroup#c9 .card {
+  -webkit-transform: rotate(-10.99deg);
+          transform: rotate(-10.99deg);
+}
+
+.cardgroup#c10 .card {
+  -webkit-transform: rotate(14.75deg);
+          transform: rotate(14.75deg);
+}
+
+.cardgroup#cBube .card {
+  -webkit-transform: rotate(-17.16deg);
+          transform: rotate(-17.16deg);
+}
+
+.cardgroup#cBube p {
+  color: #958E7C;
+}
+
+.cardgroup#cQueen .card {
+  -webkit-transform: rotate(16.76deg);
+          transform: rotate(16.76deg);
+}
+
+.cardgroup#cKing .card {
+  -webkit-transform: rotate(-8.32deg);
+          transform: rotate(-8.32deg);
+}
+
+.cardgroup#cAce .card {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.cardgroup#c2 .card {
+  -webkit-transform: rotate(-17.9deg);
+          transform: rotate(-17.9deg);
+}
+
+.cardgroup#c3 .card {
+  -webkit-transform: rotate(15.33deg);
+          transform: rotate(15.33deg);
+}
+
+.cardgroup#c4 .card {
+  -webkit-transform: rotate(-9.14deg);
+          transform: rotate(-9.14deg);
+}
+
+.cardgroup#c5 .card {
+  -webkit-transform: rotate(17.13deg);
+          transform: rotate(17.13deg);
+}
+
+.cardgroup#c6 .card {
+  -webkit-transform: rotate(-11.45deg);
+          transform: rotate(-11.45deg);
+}
+
+.cardgroup#cJoker .card {
+  -webkit-transform: rotate(7.68deg);
+          transform: rotate(7.68deg);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+section#extreme {
+  background: #CCCCCC;
+}
+
+section#extreme .cardgroup:nth-child(odd) {
+  -ms-grid-columns: 75px 190px;
+      grid-template-columns: 75px 190px;
+      grid-template-areas: "card headline" "card p";
+}
+
+section#extreme .cardgroup:nth-child(even) {
+  -ms-grid-columns: 190px 75px;
+      grid-template-columns: 190px 75px;
+      grid-template-areas: "headline card" "p card ";
+}
+
+#extremeActions {
+  margin-top: -50px;
+}
+
+#extremeHeader {
+  position: relative;
+  height: 292px;
+  width: 100%;
+  margin-top: -20px;
+}
+
+#extremeIntroText {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 164px;
+  width: 205px;
+  height: 170px;
+  text-align: center;
+  -webkit-text-stroke: 2px #000000;
+  text-stroke: 2px #000000;
+  color: white;
+  font-family: 'Rum Raisin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+}
+
+.extremeHeaderbackground {
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.extremeHeaderbackground .darkBackWall {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.extremeHeaderbackground .darkBackWall .top {
+  position: relative;
+  background: url("../img/WallTextureDark.png");
+  height: 238px;
+  width: 100%;
+  border-top: #000000 solid 2px;
+  border-bottom: #000000 solid 2px;
+}
+
+.extremeHeaderbackground .darkBackWall .wall {
+  position: absolute;
+  top: 236px;
+  height: 28px;
+  border: #000000 solid 1px;
+  background: url("../img/WallTextureDark.png");
+}
+
+.extremeHeaderbackground .darkBackWall .w1, .extremeHeaderbackground .darkBackWall .w2 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.extremeHeaderbackground .darkBackWall .w3, .extremeHeaderbackground .darkBackWall .w4 {
+  right: 0;
+}
+
+.extremeHeaderbackground .darkBackWall .w2, .extremeHeaderbackground .darkBackWall .w4 {
+  top: 262px;
+}
+
+.extremeHeaderbackground .darkBackWall .w1 {
+  width: 120px;
+}
+
+.extremeHeaderbackground .darkBackWall .w2 {
+  width: 100px;
+}
+
+.extremeHeaderbackground .darkBackWall .w3 {
+  width: 66px;
+}
+
+.extremeHeaderbackground .darkBackWall .w4 {
+  width: 45px;
+}
+
+.extremeHeaderbackground .lightFrontWall {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.extremeHeaderbackground .lightFrontWall .top {
+  position: relative;
+  background: url("../img/WallTextureLight.png");
+  height: 68px;
+  width: 110%;
+  border-top: #000000 solid 2px;
+  border-bottom: #000000 solid 2px;
+}
+
+.extremeHeaderbackground .lightFrontWall .windowQueen {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  top: 67px;
+  left: 10px;
+  background: url("../img/windowQueen.svg") no-repeat center;
+  background-size: contain;
+}
+
+.extremeHeaderbackground .lightFrontWall .torch {
+  position: absolute;
+  width: 25px;
+  height: 75px;
+  top: 116px;
+  right: 52px;
+  background: url("../img/torch.svg") no-repeat center;
+  background-size: contain;
+}
+
+.extremeHeaderbackground .lightFrontWall .leftWall {
+  float: left;
+  margin-top: -2px;
+  width: 410px;
+  height: 190px;
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  background: url("../img/GreyWallLeft.png") no-repeat;
+}
+
+.extremeHeaderbackground .lightFrontWall .rightWall {
+  margin-top: -2px;
+  margin-left: 100%;
+  width: 410px;
+  height: 190px;
+  -webkit-transform: translateX(-85px);
+          transform: translateX(-85px);
+  background: url("../img/GreyWallRight.png") no-repeat top right;
+}
+
+.extremeFooterBackground {
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.extremeFooterBackground .darkBackWall .bottom {
+  position: absolute;
+  bottom: 0;
+  position: absolute;
+  background: url("../img/WallTextureDark.png");
+  height: 130px;
+  width: 110%;
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+  border: #000000 solid 1px;
+}
+
+.extremeFooterBackground .darkBackWall .wall {
+  position: absolute;
+  bottom: 130px;
+  height: 28px;
+  border: #000000 solid 1px;
+  background: url("../img/WallTextureDark.png");
+}
+
+.extremeFooterBackground .darkBackWall .w1 {
+  bottom: 129px;
+}
+
+.extremeFooterBackground .darkBackWall .w2 {
+  bottom: 156px;
+}
+
+.extremeFooterBackground .darkBackWall .left {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.extremeFooterBackground .darkBackWall .left.w1 {
+  width: 13px;
+}
+
+.extremeFooterBackground .darkBackWall .right {
+  right: 0;
+}
+
+.extremeFooterBackground .darkBackWall .right.w1 {
+  width: 132px;
+}
+
+.extremeFooterBackground .darkBackWall .right.w2 {
+  width: 117px;
+}
+
+.extremeFooterBackground .lightFrontWall {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.extremeFooterBackground .lightFrontWall .top {
+  position: absolute;
+  background: url("../img/WallTextureLight.png");
+  height: 68px;
+  width: 110%;
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+  border: #000000 solid 1px;
+}
+
+.extremeFooterBackground .lightFrontWall .wall {
+  position: absolute;
+  height: 35px;
+  width: 120px;
+  border: #000000 solid 1px;
+  background: url("../img/WallTextureLight.png");
+}
+
+.extremeFooterBackground .lightFrontWall .w1 {
+  bottom: 0;
+}
+
+.extremeFooterBackground .lightFrontWall .w2 {
+  bottom: 34px;
+}
+
+.extremeFooterBackground .lightFrontWall .left {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.extremeFooterBackground .lightFrontWall .left.w2 {
+  width: 44px;
+}
+
+.extremeFooterBackground .lightFrontWall .left.w1 {
+  width: 106px;
+}
+
+.extremeFooterBackground .lightFrontWall .right {
+  right: 0;
+}
+
+.extremeFooterBackground .lightFrontWall .right.w2 {
+  width: 44px;
+}
+
+.extremeFooterBackground .lightFrontWall .right.w1 {
+  width: 84px;
+}
+
+#extremeFooter {
+  position: relative;
+  height: 184px;
+  width: 100%;
+  margin-top: -30px;
+}
+
+#extremeOutroText {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 125px;
+  text-align: center;
+  -webkit-text-stroke: 2px #000000;
+  text-stroke: 2px #000000;
+  color: white;
+  font-family: 'Rum Raisin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+}
+/*# sourceMappingURL=style.css.map */

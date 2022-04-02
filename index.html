@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#fffff">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#fffff">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fffff">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Ein cooles neues Kartenspiel...">
+    <meta name="author" content="Stefan K., John H.">
+    <title>Hofstaat</title>
+    <link rel="stylesheet" href="../scss/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Rum+Raisin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a id="downloadButton" href="https://drive.google.com/file/d/1PJLP1OxVPE3XIYk84gNIkaM8dVBwSIrj/view">
+            <img src="./img/DownloadButton.svg" alt="Anleitung jetzt herunterladen">
+        </a>
+        <a id="readOnline" href="#beginning">
+            <img src="./img/readOnline.svg" alt="oder online lesen">
+        </a>
+        <div id="description">Hofstaat ist ein lustiges Kartenspiel mit einem normalen Skat- oder Poker-Deck für die ganze Familie.</div>
+        <div class="icongroup">
+            <div class="icon">
+                <img src="./img/CardsIcon.svg" alt="Karten">
+                <span>Skat-\Pokerdeck</span>
+            </div>
+            <div class="icon">
+                <img src="./img/ClockIcon.svg" alt="Uhr">
+                <span>~20min</span>
+            </div>
+            <div class="icon">
+                <img src="./img/playerIcon.svg" alt="Spielersymbole">
+                <span>2-4 Spieler</span>
+            </div>
+            <div class="icon">
+                <img src="./img/confettiCannonIcon.svg" alt="Konfettikanone">
+                <span>total lustig</span>
+            </div>
+        </div>
+    </header>
+    <section id="beginning">
+        <div class="headline1"><h1>Anleitung</h1></div>
+
+        <div id="gameSetup" class="contentWrapper">
+            <div class="arrowBanner"><h2>Spielaufbau</h2></div>
+            <ul>
+                <li>Zum Starten brauchst du ein Skat- oder Poker-Deck. Es wird empfohlen, zuerst mit einem Skat-Deck zu spielen, damit es einfacher ist.</li>
+                <li>Jeder Spieler braucht etwas Platz, um einige Karten für alle sichtbar vor sich abzulegen. Dies ist dann sein Hofstaat.</li>
+            </ul>
+        </div>
+
+        <div class="contentWrapper">
+            <div class="arrowBanner"><h2>Spielanfang</h2></div>
+            <ul class="spielanfang">
+                <li>Wer beim Schere Stein Papier gewinnt, fängt an</li>
+                <li>Jeder bekommt am Anfang 3 Karten</li>
+                <li>Gespielt wird im Uhrzeigersinn</li>
+            </ul>
+            <img src="./img/gameTable.svg" alt="Beispiel Spielaufbau">
+        </div>
+
+        <div id="goal" class="contentWrapper">
+            <div class="goalBanner"><h2>Spielziel</h2></div>
+            <div class="stdText">Ziel des Spiels ist es einen möglichst großen Hofstaat aufzubauen. Hat der Hofstaat eines Spielers am Ende seines Zuges diese Größe, hat er gewonnen:</div>
+            <div id="goalPaper">
+                <ul>
+                    <li>2 Spieler: 5 Hofkarten</li>
+                    <li>3 Spieler: 4 Hofkarten</li>
+                    <li>4 Spieler: 4 Hofkarten</li>
+                </ul>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section id="turn">
+        <div class="longBanner"><h2>Spielzug</h2></div>
+        <div id="overview" class="contentWrapper">
+            <img src="./img/Turn1.svg" alt="1.">
+            Ziehe eine Karte vom Nachziehstapel
+            <img id="turn2" src="./img/Turn2.svg" alt="2.">
+            Spiele aus: eine Aktionskarte oder Hofkarte <span id="or">oder</span> lege eine Karte ab und ziehe eine nach
+        </div>
+        <div class="contentWrapper stdText">
+            Aktionskarten werden auf den Ablagestapel gelegt und lösen eine einmalige Aktion aus.
+            Hofkarten werden vor dem Spieler ausgelegt, somit sind sie in seinem “Hofstaat”. Dort bleiben sie liegen und haben optional einen einamligen Effekt.
+        </div>
+
+        <div class="contentWrapper stdText" id="limit">
+            <h2><span>Achtung:</span> Kartenlimit!</h2>
+            Hast du am Ende deines Zuges mehr als 5 Karten auf deiner Hand musst du den Überschuss ablegen.
+            <img src="./img/discard.svg" alt="Karteablegen illustriert">
+        </div>
+
+        <div class="contentWrapper stdText" id="wedding">
+            <div class="weddingBanner"><h2>Sonderregel: Hochzeit</h2></div>
+            <p>
+            Hast du am Ende deines Zuges mehr als 5 Karten auf deiner Hand musst du den Überschuss ablegen.
+            Wenn ein rotes oder schwarzes König-Dame-Pärchen in deinem Hofstaat ausgelegt ist, gelten diese als verheiratet. Hast du zu Beginn deines Zuges ein verheiratetes Paar in deinem Hofstaat, kannst du zusätzlich zu deinem Zug einen Buben aus deiner Hand in deinen Staat bringen. Spezialkarten haben keinen Effekt darauf.
+            </p>
+            <img src="./img/Wedding.svg" alt="Karten haben ein Baby">
+        </div>
+    </section>
+
+    <section id="skatCards">
+        <div class="headline1"><h1>SPIELKARTEN</h1></div>
+        <div id="cardtext">
+            <span>K</span>
+            <span>arten haben einen einmaligen
+            Effekt nach dem ausspielen.</span> 
+        </div>
+        <div id="actions" class="contentWrapper">
+            <div class="actionsBanner"></div>
+            
+            <div class="cardgroup" id="c7">
+                <img class="card" src="\img\card7.svg" alt="Karte 7">
+                <img class="cardName" src="\img\card7name.svg" alt="7: Nachschub">
+                <p>Du darfst zwei Karten ziehen</p>
+            </div>
+
+            <div class="cardgroup" id="c8">
+                <img class="card" src="\img\card8.svg" alt="Karte 7">
+                <img class="cardName" src="\img\card8name.svg" alt="7: Nachschub">
+                <p>Du darfst eine Karte von einem beliebigen Spieler ziehen
+                </p>
+            </div>
+
+            <div class="cardgroup" id="c9">
+                <img class="card" src="\img\card9.svg" alt="Karte 7">
+                <img class="cardName" src="\img\card9name.svg" alt="7: Nachschub">
+                <p>Du darfst eine Karte aus einem beliebigen Hofstaat auf den Ablagestapel legen</p>
+            </div>
+
+            <div class="cardgroup" id="c10">
+                <img class="card" src="\img\card10.svg" alt="Karte 7">
+                <img class="cardName" src="\img\card10name.svg" alt="7: Nachschub">
+                <p>Du darfst dir eine beliebige Karte vom Ablagestapel aussuchen</p>
+            </div>
+
+
+        </div>
+        <div id="court" class="contentWrapper">
+            <div class="courtBanner"></div>
+
+            <div class="cardgroup" id="cBube">
+                <img class="card" src="\img\cardBube.svg" alt="Karte Bube">
+                <img class="cardName" src="\img\cardBubeName.svg" alt="Bube:">
+                <p>-keine Optionen-</p>
+            </div>
+
+            <div class="cardgroup" id="cQueen">
+                <img class="card" src="\img\cardQueen.svg" alt="Karte Dame">
+                <img class="cardName" src="\img\cardQueenName.svg" alt="Dame:">
+                <p>Optional: Zwei beliebige Karten (inkl. Dame) aus zwei Staaten vertauschen</p>
+            </div>
+
+            <div class="cardgroup" id="cKing">
+                <img class="card" src="\img\cardKing.svg" alt="Karte König">
+                <img class="cardName" src="\img\cardKingName.svg" alt="König:">
+                <p>Optional: Spiele eine weitere Karte</p>
+            </div>
+
+        </div>
+
+        <div id="special" class="contentWrapper">
+            <div class="specialBanner"></div>
+
+            <div class="cardgroup" id="cAce">
+                <img class="card" src="\img\cardAss.svg" alt="Karte Ass">
+                <img class="cardName" src="\img\cardAssName.svg" alt="Ass:">
+                <p>Kann immer gespielt werden um das erfolgreiche Ausspielen einer Karte zu verhindern. Die verhinderte Karte und das Ass landen auf dem Ablagestapel (Auch ein Ass selbst kann verhindert werden)</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="extreme">
+        <div class="longBanner extreme"><h2>Extreme Version</h2></div>
+        <div id="extremeHeader">
+            <div class="extremeHeaderbackground">
+                <div class="darkBackWall">
+                    <div class="top"></div>
+                    <div class="wall w1"></div>
+                    <div class="wall w2"></div>
+                    <div class="wall w3"></div>
+                    <div class="wall w4"></div>
+                </div>
+                <div class="lightFrontWall">
+                    <div class="top"></div>
+                    <div class="leftWall"></div>
+                    <div class="rightWall"></div>
+                    <div class="windowQueen"></div>
+                    <div class="torch"></div>
+                </div>
+            </div>
+            <div id="extremeIntroText">
+                <img class="cardName" src="\img\extremeText.svg" alt="Dir ist Hofstaat nicht 
+                kompliziert genug?
+                Nimm dir ein Pokerdeck und spiel die extreme Version">
+            </div>
+        </div>
+
+        <div id="extremeActions" class="contentWrapper">
+            <div class="cardgroup" id="c2">
+                <img class="card" src="\img\card2.svg" alt="Karte 2">
+                <img class="cardName" src="\img\card2name.svg" alt="2: Heiter Weiter">
+                <p>Spiele 2 weitere Karten</p>
+            </div>
+
+            <div class="cardgroup" id="c3">
+                <img class="card" src="\img\card3.svg" alt="Karte 3">
+                <img class="cardName" src="\img\card3name.svg" alt="3: Aufrüsten">
+                <p>Nimm 3 Karten, alle Anderen nehmen eine Karte
+                </p>
+            </div>
+
+            <div class="cardgroup" id="c4">
+                <img class="card" src="\img\card4.svg" alt="Karte 4">
+                <img class="cardName" src="\img\card4name.svg" alt="4: Erneuerung">
+                <p>Lege alle Karten ab und nimm dir 4 Neue</p>
+            </div>
+
+            <div class="cardgroup" id="c5">
+                <img class="card" src="\img\card5.svg" alt="Karte 5">
+                <img class="cardName" src="\img\card5name.svg" alt="5: Meisterdieb">
+                <p>wie Karte 8, aber die gestohlene Karte wird direkt gespielt</p>
+            </div>
+
+            <div class="cardgroup" id="c6">
+                <img class="card" src="\img\card6.svg" alt="Karte 6">
+                <img class="cardName" src="\img\card6name.svg" alt="6: Steuer">
+                <p>Alle Anderen müssen so viele Karte abwerfen, wie sie in ihrem Staat haben</p>
+            </div>
+
+            <div class="cardgroup" id="cJoker">
+                <img class="card" src="\img\cardJoker.svg" alt="Karte Joker">
+                <img class="cardName" src="\img\cardJokerName.svg" alt="Joker:">
+                <p>Spielst du den Joker zuerst, bestimmst du, als welche Karte dieser den Rest des Spiels gilt</p>
+            </div>
+        </div>
+
+        <div id="extremeFooter">
+            <div class="extremeFooterBackground">
+                <div class="darkBackWall">
+                    <div class="wall left w1"></div>
+                    <div class="wall right w1"></div>
+                    <div class="wall right w2"></div>
+                    <div class="bottom"></div>
+                </div>
+                <div class="lightFrontWall">
+                    <div class="wall left w1"></div>
+                    <div class="wall left w2"></div>
+                    <div class="wall right w1"></div>
+                    <div class="wall right w2"></div>
+                </div>
+            </div>
+            <div id="extremeOutroText">
+                <img src="\img\extremeOutroText.svg" alt="Optional kannst du auch mit 2 Decks Spielen, das Kartenlimit aufheben und mit noch mehr Spielern spielen.">
+            </div>
+        </div>
+    </section>
+
+    
+    
+</body>
+</html>
