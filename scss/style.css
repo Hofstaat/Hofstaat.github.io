@@ -483,6 +483,35 @@ section#turn {
   background: url("../img/ExtremeBanner.svg") no-repeat center;
 }
 
+@media (min-width: 650px) {
+  #basicTurn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 566px;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #basicTurn .contentWrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #basicTurn #overview {
+    width: 230px;
+  }
+  #basicTurn #overview #turn2 {
+    margin-top: 15px;
+  }
+  #basicTurn .stdText {
+    width: 280px;
+  }
+}
+
 #overview {
   font-family: 'Roboto';
   font-style: normal;
@@ -505,6 +534,30 @@ section#turn {
   margin-top: 30px;
 }
 
+@media (min-width: 650px) {
+  #limit {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "h2 h2" "txt img";
+  }
+  #limit h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: h2;
+  }
+  #limit p {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: txt;
+  }
+  #limit img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: img;
+  }
+}
+
 #limit h2 {
   width: 100%;
   text-align: left;
@@ -518,6 +571,31 @@ section#turn {
 #wedding img {
   margin-top: -40px;
   margin-left: 130px;
+}
+
+@media (min-width: 650px) {
+  #wedding {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "wb wb" "txt img";
+  }
+  #wedding .weddingBanner {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: wb;
+  }
+  #wedding p {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: txt;
+  }
+  #wedding img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: img;
+    margin: 0;
+  }
 }
 
 .weddingBanner {

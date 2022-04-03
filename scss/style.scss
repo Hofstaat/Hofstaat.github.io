@@ -423,6 +423,30 @@ section#turn{
 
 }
 
+#basicTurn{
+    @media (min-width: $tabletBreakPoint){
+        display: flex;
+        width: 566px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+    
+        .contentWrapper{
+            margin-left: 0;
+            margin-right: 0;  
+        }
+        
+        #overview{
+            width: 230px;
+            #turn2{
+                margin-top: 15px;
+            }
+        }
+        .stdText{
+            width: 280px;
+        }
+    }
+}
 
 #overview{
     @include stdFont();
@@ -441,6 +465,19 @@ section#turn{
 
 
 #limit{
+    @media (min-width: $tabletBreakPoint){
+        display: grid;
+        grid-template-areas: "h2 h2" "txt img";
+        h2{
+            grid-area: h2;
+        }
+        p{
+            grid-area: txt;
+        }
+        img{
+            grid-area: img;
+        }
+    }
 
    h2{
     width: 100%;
@@ -450,14 +487,32 @@ section#turn{
    h2 span{
        color:#000000;
    }
+   
 } 
 
 #wedding{
 
-  img{
-       margin-top: -40px;
-       margin-left: 130px;
-   }  
+    img{
+        margin-top: -40px;
+        margin-left: 130px;
+    }  
+
+    @media (min-width: $tabletBreakPoint){
+        display: grid;
+        grid-template-areas: "wb wb" "txt img";
+        .weddingBanner{
+            grid-area: wb;
+        }
+        p{
+            grid-area: txt;
+        }
+        img{
+            grid-area: img;
+            margin: 0;
+        }
+    }
+
+  
 }
 
 .weddingBanner{

@@ -87,27 +87,29 @@
 
     <section id="turn">
         <div class="longBanner"><h2>Spielzug</h2></div>
-        <div id="overview" class="contentWrapper">
-            <img src="./img/Turn1.svg" alt="1.">
-            Ziehe eine Karte vom Nachziehstapel
-            <img id="turn2" src="./img/Turn2.svg" alt="2.">
-            Spiele aus: eine Aktionskarte oder Hofkarte <span id="or">oder</span> lege eine Karte ab und ziehe eine nach
+        <div id="basicTurn">
+            <div id="overview" class="contentWrapper">
+                <img src="./img/Turn1.svg" alt="1.">
+                Ziehe eine Karte vom Nachziehstapel
+                <img id="turn2" src="./img/Turn2.svg" alt="2.">
+                Spiele aus: eine Aktionskarte oder Hofkarte <span id="or">oder</span> lege eine Karte ab und ziehe eine nach
+            </div>
+            <div class="contentWrapper stdText">
+                Aktionskarten werden auf den Ablagestapel gelegt und lösen eine einmalige Aktion aus.<br><br>
+                Hofkarten werden vor dem Spieler ausgelegt, somit sind sie in seinem “Hofstaat”. Dort bleiben sie liegen und haben optional einen einamligen Effekt.
+            </div>
         </div>
-        <div class="contentWrapper stdText">
-            Aktionskarten werden auf den Ablagestapel gelegt und lösen eine einmalige Aktion aus.
-            Hofkarten werden vor dem Spieler ausgelegt, somit sind sie in seinem “Hofstaat”. Dort bleiben sie liegen und haben optional einen einamligen Effekt.
-        </div>
-
         <div class="contentWrapper stdText" id="limit">
             <h2><span>Achtung:</span> Kartenlimit!</h2>
-            Hast du am Ende deines Zuges mehr als 5 Karten auf deiner Hand musst du den Überschuss ablegen.
+            <p>
+                Hast du am Ende deines Zuges mehr als 5 Karten auf deiner Hand musst du den Überschuss ablegen.
+            </p>
             <img src="./img/discard.svg" alt="Karteablegen illustriert">
         </div>
 
         <div class="contentWrapper stdText" id="wedding">
             <div class="weddingBanner"><h2>Sonderregel: Hochzeit</h2></div>
             <p>
-            Hast du am Ende deines Zuges mehr als 5 Karten auf deiner Hand musst du den Überschuss ablegen.
             Wenn ein rotes oder schwarzes König-Dame-Pärchen in deinem Hofstaat ausgelegt ist, gelten diese als verheiratet. Hast du zu Beginn deines Zuges ein verheiratetes Paar in deinem Hofstaat, kannst du zusätzlich zu deinem Zug einen Buben aus deiner Hand in deinen Staat bringen. Spezialkarten haben keinen Effekt darauf.
             </p>
             <img src="./img/Wedding.svg" alt="Karten haben ein Baby">
