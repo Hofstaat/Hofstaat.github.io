@@ -712,21 +712,20 @@ section#skatCards {
   -webkit-column-gap: 15px;
           column-gap: 15px;
   row-gap: 5px;
+  -ms-grid-columns: 75px 190px;
+      grid-template-columns: 75px 190px;
+      grid-template-areas: "card headline" "card p";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.cardgroup:nth-child(even) {
-  -ms-grid-columns: 75px 190px;
-      grid-template-columns: 75px 190px;
-      grid-template-areas: "card headline" "card p";
-}
-
-.cardgroup:nth-child(odd) {
-  -ms-grid-columns: 190px 75px;
-      grid-template-columns: 190px 75px;
-      grid-template-areas: "headline card" "p card ";
+@media (max-width: 649px) {
+  .cardgroup:nth-child(odd) {
+    -ms-grid-columns: 190px 75px;
+        grid-template-columns: 190px 75px;
+        grid-template-areas: "headline card" "p card ";
+  }
 }
 
 .cardgroup p {
@@ -836,6 +835,88 @@ section#skatCards {
           transform: rotate(7.68deg);
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+@media (min-width: 650px) {
+  #actions, #court, #special {
+    width: 566px;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "banner banner" "cg1 cg2" "cg3 cg4";
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #special {
+        grid-template-areas: "banner" "cg";
+  }
+  #special .specialBanner {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: banner;
+  }
+  #special .cardgroup {
+    width: 566px;
+    -ms-grid-columns: 75px auto;
+        grid-template-columns: 75px auto;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: cg;
+  }
+  #actions {
+        grid-template-areas: "banner banner" "cg1 cg2" "cg3 cg4";
+  }
+  #actions .actionsBanner {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: banner;
+  }
+  #actions .cardgroup:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: cg1;
+  }
+  #actions .cardgroup:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cg2;
+  }
+  #actions .cardgroup:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: cg3;
+  }
+  #actions .cardgroup:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: cg4;
+  }
+  #court {
+        grid-template-areas: "banner banner" "bube king" "queen space";
+  }
+  #court .courtBanner {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: banner;
+  }
+  #court .cardgroup:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: bube;
+  }
+  #court .cardgroup:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: king;
+  }
+  #court .cardgroup:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: queen;
+  }
 }
 
 section#extreme {
