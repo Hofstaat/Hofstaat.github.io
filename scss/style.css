@@ -145,7 +145,7 @@ header {
           flex-direction: column;
 }
 
-section#beginning {
+section#start {
   background: #C7BDA6;
   padding-bottom: 50px;
 }
@@ -218,6 +218,40 @@ h2 {
   width: 295px;
 }
 
+@media (min-width: 650px) {
+  #goal {
+    width: 566px;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "banner paper" "txt paper";
+    -ms-grid-rows: 2fr 5fr;
+        grid-template-rows: 2fr 5fr;
+  }
+  #goal .stdText {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: txt;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  #goal .goalBanner {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: banner;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  #goal #goalPaper {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: paper;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .goalBanner {
   overflow: visible;
   position: relative;
@@ -265,6 +299,21 @@ h2 {
   }
 }
 
+@media (min-width: 650px) {
+  #gameSetup .arrowBanner {
+    margin-right: 100%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+
+@media (min-width: 650px) and (min-width: 650px) {
+  #gameSetup ul li {
+    width: 280px;
+    float: left;
+  }
+}
+
 #gameSetup ul li {
   background: url("../img/bulletpoint.svg") no-repeat left 2px;
   padding: 0px 0px 0px 22px;
@@ -279,13 +328,46 @@ h2 {
 }
 
 @media (min-width: 650px) {
-  #gameSetup ul li {
-    width: 280px;
-    float: left;
+  #gameBeginning {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: min-content max-content;
+        grid-template-rows: -webkit-min-content -webkit-max-content;
+        grid-template-rows: min-content max-content;
+        grid-template-areas: "banner table" "ul table";
+  }
+  #gameBeginning .arrowBanner {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: banner;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  #gameBeginning img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: table;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #gameBeginning ul {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: ul;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
-ul.spielanfang li {
+#gameBeginning ul {
+  width: 280px;
+}
+
+#gameBeginning ul li {
   list-style: none;
   margin-bottom: 14px;
   font-family: 'Roboto';
@@ -297,15 +379,15 @@ ul.spielanfang li {
   padding: 0px 0px 0px 70px;
 }
 
-ul.spielanfang li:nth-child(1) {
+#gameBeginning ul li:nth-child(1) {
   background: url("../img/firstSymbol.svg") no-repeat 15px;
 }
 
-ul.spielanfang li:nth-child(2) {
+#gameBeginning ul li:nth-child(2) {
   background: url("../img/3BlancCards.svg") no-repeat left;
 }
 
-ul.spielanfang li:nth-child(3) {
+#gameBeginning ul li:nth-child(3) {
   background: url("../img/RoundArrow.svg") no-repeat 10px;
 }
 

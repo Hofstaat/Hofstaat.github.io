@@ -140,7 +140,7 @@ header{
     
 }
 
-section#beginning{
+section#start{
     background: #C7BDA6;
     padding-bottom: 50px;
 }
@@ -208,6 +208,27 @@ h2{
 }
 #goal{
     width: 295px;
+    @media (min-width: $tabletBreakPoint){
+        width: 566px;
+        display: grid;
+        grid-template-areas: "banner paper" "txt paper";
+        grid-template-rows: 2fr 5fr;
+
+        .stdText{
+            grid-area: txt;
+            align-self: flex-start;
+        }
+
+        .goalBanner{
+            grid-area: banner;
+            align-self: flex-end;
+        }
+
+        #goalPaper{
+            grid-area: paper;
+            align-self: center;
+        }
+    }
 }
 .goalBanner{
     overflow: visible;
@@ -247,39 +268,77 @@ h2{
     margin-top: 50px;
 }
 
-#gameSetup ul li {
-    background: url("../img/bulletpoint.svg") no-repeat left 2px;
-    padding: 0px 0px 0px 22px;
-    list-style: none;
-    margin-bottom: 14px;
-    @include stdFont();
-    
+#gameSetup {
 
-    @media (min-width: $tabletBreakPoint){
-        width: 280px;
-        float: left;
+    @media (min-width: 650px){
+        .arrowBanner{margin-right: 100%;
+        transform: translateX(50%);}
+
+        ul li{
+            @media (min-width: $tabletBreakPoint){
+                width: 280px;
+                float: left;
+            }
+        }
     }
-  }
 
+    ul li {
+        background: url("../img/bulletpoint.svg") no-repeat left 2px;
+        padding: 0px 0px 0px 22px;
+        list-style: none;
+        margin-bottom: 14px;
 
-
-ul.spielanfang li{
-    list-style: none;
-    margin-bottom: 14px;
-
-    @include stdFont();
-    padding: 0px 0px 0px 70px;
-
-    &:nth-child(1){
-        background: url("../img/firstSymbol.svg") no-repeat 15px;
-    }
-    &:nth-child(2){
-        background: url("../img/3BlancCards.svg") no-repeat left;
-    }
-    &:nth-child(3){
-        background: url("../img/RoundArrow.svg") no-repeat 10px;
+        @include stdFont();
     }
 }
+
+#gameBeginning{
+    @media (min-width: $tabletBreakPoint){
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: min-content max-content;
+
+        grid-template-areas: "banner table" "ul table";  
+    
+
+        .arrowBanner{
+            grid-area: banner;
+            align-self: flex-end;
+        }
+        img{
+            grid-area: table;
+            align-self: center;
+        }
+
+        ul{
+            grid-area: ul;
+            align-self: flex-start;
+        }
+    }
+    
+    ul{
+        width: 280px;
+
+        li{
+            list-style: none;
+            margin-bottom: 14px;
+    
+            @include stdFont();
+            padding: 0px 0px 0px 70px;
+    
+            &:nth-child(1){
+                background: url("../img/firstSymbol.svg") no-repeat 15px;
+            }
+            &:nth-child(2){
+                background: url("../img/3BlancCards.svg") no-repeat left;
+            }
+            &:nth-child(3){
+                background: url("../img/RoundArrow.svg") no-repeat 10px;
+            }
+        }
+    } 
+}
+
 
 #goalPaper{
     position: relative;
