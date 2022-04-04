@@ -736,7 +736,7 @@ section#skatCards {
   line-height: 25px;
   color: #000000;
   -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: p;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -744,7 +744,7 @@ section#skatCards {
 
 .cardgroup .cardName {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: headline;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -753,7 +753,7 @@ section#skatCards {
 .cardgroup .card {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: card;
   -webkit-filter: drop-shadow(0px 7.42799px 7.42799px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 7.42799px 7.42799px rgba(0, 0, 0, 0.25));
@@ -923,20 +923,46 @@ section#extreme {
   background: #CCCCCC;
 }
 
-section#extreme .cardgroup:nth-child(odd) {
-  -ms-grid-columns: 75px 190px;
-      grid-template-columns: 75px 190px;
-      grid-template-areas: "card headline" "card p";
-}
-
-section#extreme .cardgroup:nth-child(even) {
-  -ms-grid-columns: 190px 75px;
-      grid-template-columns: 190px 75px;
-      grid-template-areas: "headline card" "p card ";
+@media (max-width: 649px) {
+  section#extreme .cardgroup:nth-child(odd) {
+    -ms-grid-columns: 75px 190px;
+        grid-template-columns: 75px 190px;
+        grid-template-areas: "card headline" "card p";
+  }
+  section#extreme .cardgroup:nth-child(even) {
+    -ms-grid-columns: 190px 75px;
+        grid-template-columns: 190px 75px;
+        grid-template-areas: "headline card" "p card ";
+  }
 }
 
 #extremeActions {
   margin-top: -50px;
+}
+
+@media (min-width: 650px) {
+  #extremeActions {
+    width: 566px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #extremeActions :nth-child(even) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
 }
 
 #extremeHeader {
@@ -952,9 +978,7 @@ section#extreme .cardgroup:nth-child(even) {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 164px;
-  width: 205px;
-  height: 170px;
+  top: 156px;
   text-align: center;
   -webkit-text-stroke: 2px #000000;
   text-stroke: 2px #000000;
@@ -1228,5 +1252,18 @@ section#extreme .cardgroup:nth-child(even) {
   font-size: 18px;
   line-height: 23px;
   letter-spacing: 0.04em;
+}
+
+.big {
+  display: none;
+}
+
+@media (min-width: 650px) {
+  .small {
+    display: none;
+  }
+  .big {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

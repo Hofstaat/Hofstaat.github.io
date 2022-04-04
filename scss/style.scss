@@ -721,19 +721,35 @@ section#extreme{
     background: #CCCCCC;
 
     .cardgroup{
-        &:nth-child(odd){
-          grid-template-columns: 75px 190px;
-          grid-template-areas: "card headline" "card p";  
+        @media (max-width: ($tabletBreakPoint - 1) ) {
+            &:nth-child(odd){
+                grid-template-columns: 75px 190px;
+                grid-template-areas: "card headline" "card p";  
+              }
+            &:nth-child(even){
+                grid-template-columns: 190px 75px;
+                grid-template-areas: "headline card" "p card ";  
+            }
         }
-        &:nth-child(even){
-            grid-template-columns: 190px 75px;
-            grid-template-areas: "headline card" "p card ";  
-          }
     }
 }
 
 #extremeActions{
-   margin-top: -50px;
+    margin-top: -50px;
+
+    @media (min-width: $tabletBreakPoint){
+        width: $tabletContentWidth;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    
+        justify-content: space-between;
+    
+        :nth-child(even){
+            align-self: flex-end;
+        }
+    }
 }
 
 #extremeHeader{
@@ -745,9 +761,9 @@ section#extreme{
 
 #extremeIntroText{
     @include centerAbs();
-    top: 164px;
-    width: 205px;
-    height: 170px;
+    top: 156px;
+    // width: 205px;
+    // height: 170px;
 
     text-align: center;
     -webkit-text-stroke: 2px #000000;
@@ -1023,3 +1039,16 @@ section#extreme{
     letter-spacing: 0.04em;
 }
 
+.big{
+    display: none;
+}
+@media (min-width: $tabletBreakPoint){
+
+    .small{
+        display: none;
+    }
+
+    .big{
+        display: block;
+    }
+}
