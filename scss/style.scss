@@ -44,7 +44,7 @@ a, button:focus{
 header{
     overflow: hidden;
     position: relative;
-    padding-top: calc(100vh - 200px);
+    padding-top: 530px;
     padding-bottom: 70px;
     width: 100%;
     height: 100%;
@@ -62,21 +62,17 @@ header{
 }
 
 #headerImg{
-    position: absolute;
+   position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%);
     width: 100%;
-    height: 100%;
+    height: 80vh;
+    margin-bottom: -45px;
     background: url("../img/DeckblattCards.svg") no-repeat center 0;
     @media (min-width: $tabletBreakPoint){
         background: url("../img/headerImgBig.svg") no-repeat center 0;
-        background-size: auto 105vh;
-
     }
-
-    background-size: auto 105vh;
-
 }
 
 
@@ -858,7 +854,7 @@ section#extreme{
             grid-area: left;
 
             margin-top: -2px;
-            width: 410px;
+            width: 100px;
             height: 190px;
            //transform: translateX(-300px);
             background: url("../img/leftWallShortWQueen.png") no-repeat;
@@ -871,7 +867,7 @@ section#extreme{
 
             
             margin-top: -2px;
-            width: 410px;
+            width: 100px;
             height: 190px;
 
             background: url("../img/rightWallShortWTorch.png") no-repeat top right;
