@@ -1,16 +1,1 @@
-<svg width="249" height="51" viewBox="0 0 249 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_1534_9217)">
-<path d="M0.0446777 0C69.5287 2.23236 114.337 2.92808 210.091 0.336295L235.979 22.2087L210.048 44.9683C129.44 47.4931 83.3066 47.0561 0.00182568 44.6321L23.1566 21.8679L0.0446777 0Z" fill="#C62222"/>
-<path d="M207.535 38.9071C136.01 40.6852 90.5866 40.871 15.2647 38.9904L30.747 22.9359L31.9665 21.6714L30.6873 20.4676L14.1084 4.86631C84.1563 7.57295 131.876 8.61669 208.454 5.55205L226.014 21.7367L207.535 38.9071Z" fill="#C62222" stroke="#FFEF60" stroke-width="3.47061"/>
-</g>
-<defs>
-<filter id="filter0_d_1534_9217" x="0.00170898" y="0" width="248.125" height="50.1379" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dx="12.1471" dy="3.47061"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1534_9217"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1534_9217" result="shape"/>
-</filter>
-</defs>
-</svg>
+<svg width="249" height="51" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)" fill="#C62222"><path d="M.045 0C69.529 2.232 114.337 2.928 210.09.336l25.888 21.873-25.931 22.76C129.44 47.492 83.307 47.055.002 44.631l23.155-22.764L.045 0Z"/><path d="M207.535 38.907c-71.525 1.778-116.948 1.964-192.27.083l15.482-16.054 1.22-1.265-1.28-1.203L14.108 4.866c70.048 2.707 117.768 3.75 194.346.686l17.56 16.185-18.479 17.17Z" stroke="#FFEF60" stroke-width="3.471"/></g><defs><filter id="a" x=".002" y="0" width="248.125" height="50.138" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="12.147" dy="3.471"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1534_9217"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1534_9217" result="shape"/></filter></defs></svg>

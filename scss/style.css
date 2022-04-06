@@ -21,7 +21,7 @@ a, button:focus {
 header {
   overflow: hidden;
   position: relative;
-  padding-top: 530px;
+  padding-top: calc(100vh - 200px);
   padding-bottom: 70px;
   width: 100%;
   height: 100%;
@@ -36,38 +36,34 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  background: url("../img/DeckblattCards.svg") no-repeat center 0, -webkit-gradient(linear, left top, left bottom, from(#C7BDA5), color-stop(23.78%, #C7BDA5), color-stop(65.45%, #ECE9E2), to(#EFE5CB));
-  background: url("../img/DeckblattCards.svg") no-repeat center 0, linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#C7BDA5), color-stop(23.78%, #C7BDA5), color-stop(65.45%, #ECE9E2), to(#EFE5CB));
+  background: linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
 }
 
 @media (min-width: 650px) {
   header {
-    background: url("../img/headerImgBig.svg") no-repeat center 0, -webkit-gradient(linear, left top, left bottom, from(#C7BDA5), color-stop(23.78%, #C7BDA5), color-stop(65.45%, #ECE9E2), to(#EFE5CB));
-    background: url("../img/headerImgBig.svg") no-repeat center 0, linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#C7BDA5), color-stop(23.78%, #C7BDA5), color-stop(65.45%, #ECE9E2), to(#EFE5CB));
+    background: linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
   }
 }
 
 #headerImg {
   position: absolute;
-}
-
-.headerContent {
-  position: relative;
-  padding-top: 530px;
-  padding-bottom: 70px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
+  background: url("../img/DeckblattCards.svg") no-repeat center 0;
+  background-size: auto 105vh;
+}
+
+@media (min-width: 650px) {
+  #headerImg {
+    background: url("../img/headerImgBig.svg") no-repeat center 0;
+    background-size: auto 105vh;
+  }
 }
 
 #downloadButton {
@@ -1058,56 +1054,49 @@ section#extreme {
 .extremeHeaderbackground .lightFrontWall {
   position: absolute;
   width: 100%;
-  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content auto min-content;
+      grid-template-columns: -webkit-min-content auto -webkit-min-content;
+      grid-template-columns: min-content auto min-content;
+  -ms-grid-rows: min-content min-content min-content;
+      grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+      grid-template-rows: min-content min-content min-content;
+      grid-template-areas: "top top top" "left gap right";
 }
 
 .extremeHeaderbackground .lightFrontWall .top {
-  position: relative;
   background: url("../img/WallTextureLight.png");
   height: 68px;
   width: 110%;
   border-top: #000000 solid 2px;
   border-bottom: #000000 solid 2px;
-}
-
-.extremeHeaderbackground .lightFrontWall .windowQueen {
-  position: absolute;
-  width: 50px;
-  height: 100px;
-  top: 67px;
-  left: 10px;
-  background: url("../img/windowQueen.svg") no-repeat center;
-  background-size: contain;
-}
-
-.extremeHeaderbackground .lightFrontWall .torch {
-  position: absolute;
-  width: 25px;
-  height: 75px;
-  top: 116px;
-  right: 52px;
-  background: url("../img/torch.svg") no-repeat center;
-  background-size: contain;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: top;
 }
 
 .extremeHeaderbackground .lightFrontWall .leftWall {
-  float: left;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: left;
   margin-top: -2px;
   width: 410px;
   height: 190px;
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
-  background: url("../img/GreyWallLeft.png") no-repeat;
+  background: url("../img/leftWallShortWQueen.png") no-repeat;
+  background-size: contain;
 }
 
 .extremeHeaderbackground .lightFrontWall .rightWall {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: right;
   margin-top: -2px;
-  margin-left: 100%;
   width: 410px;
   height: 190px;
-  -webkit-transform: translateX(-85px);
-          transform: translateX(-85px);
-  background: url("../img/GreyWallRight.png") no-repeat top right;
+  background: url("../img/rightWallShortWTorch.png") no-repeat top right;
+  background-size: contain;
 }
 
 .extremeFooterBackground {

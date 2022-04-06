@@ -44,7 +44,7 @@ a, button:focus{
 header{
     overflow: hidden;
     position: relative;
-    padding-top: 530px;
+    padding-top: calc(100vh - 200px);
     padding-bottom: 70px;
     width: 100%;
     height: 100%;
@@ -55,36 +55,30 @@ header{
     gap: 20px;
 
     
-    background: url("../img/DeckblattCards.svg") no-repeat center 0, linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
+    background: linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
     @media (min-width: $tabletBreakPoint){
-        background: url("../img/headerImgBig.svg") no-repeat center 0, linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
+        background: linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
     }
 }
 
 #headerImg{
     position: absolute;
-    // top: 0;
-    // left: 50%;
-    // transform: translate(-50%);
-
-    // width: 100%;
-    // height: 100%;
-    // background: url("../img/DeckblattCards.svg") no-repeat center 0;
-}
-
-.headerContent{
-    position: relative;
-    padding-top: 530px;
-    padding-bottom: 70px;
-
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
     width: 100%;
     height: 100%;
-    display: flex;
-    //justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+    background: url("../img/DeckblattCards.svg") no-repeat center 0;
+    @media (min-width: $tabletBreakPoint){
+        background: url("../img/headerImgBig.svg") no-repeat center 0;
+        background-size: auto 105vh;
+
+    }
+
+    background-size: auto 105vh;
+
 }
+
 
 #downloadButton{
     position: relative;
@@ -846,57 +840,42 @@ section#extreme{
     .lightFrontWall{
         position: absolute;
         width: 100%;
-        height: 100%;
-       // z-index: 1;
+        display: grid;
+        grid-template-columns: min-content auto min-content;
+        grid-template-rows: min-content min-content min-content;
+        grid-template-areas: "top top top" "left gap right";
 
         .top{
-            position: relative;
             background: url("../img/WallTextureLight.png");
             height: 68px;
             width: 110%;
-            //transform: translateX(-5%);
             border-top: #000000 solid 2px;
             border-bottom: #000000 solid 2px; 
-        }
-
-        .windowQueen{
-            position: absolute;
-            width: 50px;
-            height: 100px;
-            top: 67px;
-            left: 10px;
-            background: url("../img/windowQueen.svg") no-repeat center;
-            background-size: contain;
-        }
-        .torch{
-            position: absolute;
-            width: 25px;
-            height: 75px;
-            top: 116px;
-            right: 52px;
-
-            background: url("../img/torch.svg") no-repeat center;
-            background-size: contain;
-
+            grid-area: top;
         }
 
         .leftWall{
-            float: left;
+            grid-area: left;
+
             margin-top: -2px;
             width: 410px;
             height: 190px;
-           transform: translateX(-300px);
-            background: url("../img/GreyWallLeft.png") no-repeat;
+           //transform: translateX(-300px);
+            background: url("../img/leftWallShortWQueen.png") no-repeat;
+            background-size: contain;
+
         }
 
         .rightWall{
-            //float: right;
+            grid-area: right;
+
+            
             margin-top: -2px;
-            margin-left: 100%;
             width: 410px;
             height: 190px;
-            transform: translateX(-85px);
-            background: url("../img/GreyWallRight.png") no-repeat top right;
+
+            background: url("../img/rightWallShortWTorch.png") no-repeat top right;
+            background-size: contain;
         }
         
 
