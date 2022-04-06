@@ -1223,6 +1223,12 @@ section#extreme {
   margin-top: -30px;
 }
 
+@media (min-width: 650px) and (max-width: 815px) {
+  #extremeFooter {
+    margin-top: 0;
+  }
+}
+
 #extremeOutroText {
   position: absolute;
   left: 50%;
