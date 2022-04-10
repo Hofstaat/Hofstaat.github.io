@@ -608,10 +608,10 @@ section#skatCards{
     .cardName {grid-area: headline; 
         align-self: flex-end;}
 
-        &#c7 .cardName {width: 128px;}
+        &#c7 .cardName {width: 132px;}
         &#c8 .cardName {width: 113px;}
         &#c9 .cardName {width: 105px;}
-        &#c10 .cardName {width: 163px;}
+        &#c10 .cardName {width: 128px;}
         &#cBube .cardName {width: 49px;}
         &#cQueen .cardName {width: 204px;}
         &#cKing .cardName {width: 190px;}
@@ -635,18 +635,13 @@ section#skatCards{
     &#c8 .card { transform: rotate(14.01deg);}
     &#c9 .card { transform: rotate(-10.99deg);}
     &#c10 .card { transform: rotate(14.75deg);}
-
     &#cBube{ 
         .card{  transform: rotate(-17.16deg);}
         p{color:#958E7C;}
     }
     &#cQueen .card { transform: rotate(16.76deg);}
     &#cKing .card { transform: rotate(-8.32deg);}
-
     &#cAce .card {align-self:flex-start;}
-
-    //extreme
-
     &#c2 .card { transform: rotate(-17.9deg);}
     &#c3 .card { transform: rotate(15.33deg);}
     &#c4 .card { transform: rotate(-9.14deg);}
@@ -654,6 +649,28 @@ section#skatCards{
     &#c6 .card { transform: rotate(-11.45deg);}
     &#cJoker .card { transform: rotate(7.68deg);
         align-self:flex-start;}
+
+    @media (min-width: $tabletBreakPoint){
+        &#c7 .card { transform: rotate(-10.93deg);}
+        &#c8 .card { transform: rotate(9.48deg);}
+        &#c9 .card { transform: rotate(11.95deg);}
+        &#c10 .card { transform: rotate(-10.99deg);}
+
+        // &#cBube .card{  transform: rotate(-17.16deg);}
+        &#cQueen .card { transform: rotate(8.63deg);}
+        // &#cKing .card { transform: rotate(-8.32deg);}
+        // &#cAce .card {align-self:flex-start;}
+
+        // &#c2 .card { transform: rotate(-17.9deg);}
+        &#c3 .card { transform: rotate(8.69deg);}
+        &#c4 .card { transform: rotate(9.14deg);}
+        &#c5 .card { transform: rotate(-8.68deg);}
+        &#c6 .card { transform: rotate(-11.68deg);}
+        &#cJoker .card { 
+            transform: rotate(9.26deg);
+            align-self: center;
+        }
+    }
     
 }
 

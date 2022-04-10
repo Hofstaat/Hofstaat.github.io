@@ -728,7 +728,7 @@ section#skatCards {
 }
 
 .cardgroup#c7 .cardName {
-  width: 128px;
+  width: 132px;
 }
 
 .cardgroup#c8 .cardName {
@@ -740,7 +740,7 @@ section#skatCards {
 }
 
 .cardgroup#c10 .cardName {
-  width: 163px;
+  width: 128px;
 }
 
 .cardgroup#cBube .cardName {
@@ -868,6 +868,52 @@ section#skatCards {
           transform: rotate(7.68deg);
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+@media (min-width: 650px) {
+  .cardgroup#c7 .card {
+    -webkit-transform: rotate(-10.93deg);
+            transform: rotate(-10.93deg);
+  }
+  .cardgroup#c8 .card {
+    -webkit-transform: rotate(9.48deg);
+            transform: rotate(9.48deg);
+  }
+  .cardgroup#c9 .card {
+    -webkit-transform: rotate(11.95deg);
+            transform: rotate(11.95deg);
+  }
+  .cardgroup#c10 .card {
+    -webkit-transform: rotate(-10.99deg);
+            transform: rotate(-10.99deg);
+  }
+  .cardgroup#cQueen .card {
+    -webkit-transform: rotate(8.63deg);
+            transform: rotate(8.63deg);
+  }
+  .cardgroup#c3 .card {
+    -webkit-transform: rotate(8.69deg);
+            transform: rotate(8.69deg);
+  }
+  .cardgroup#c4 .card {
+    -webkit-transform: rotate(9.14deg);
+            transform: rotate(9.14deg);
+  }
+  .cardgroup#c5 .card {
+    -webkit-transform: rotate(-8.68deg);
+            transform: rotate(-8.68deg);
+  }
+  .cardgroup#c6 .card {
+    -webkit-transform: rotate(-11.68deg);
+            transform: rotate(-11.68deg);
+  }
+  .cardgroup#cJoker .card {
+    -webkit-transform: rotate(9.26deg);
+            transform: rotate(9.26deg);
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 @media (min-width: 650px) {
