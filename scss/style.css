@@ -720,16 +720,67 @@ section#skatCards {
 }
 
 .cardgroup .cardName {
-  -ms-interpolation-mode: nearest-neighbor;
-      image-rendering: -webkit-optimize-contrast;
-      image-rendering: -moz-crisp-edges;
-      image-rendering: -o-pixelated;
-      image-rendering: pixelated;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: headline;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.cardgroup#c7 .cardName {
+  width: 128px;
+}
+
+.cardgroup#c8 .cardName {
+  width: 113px;
+}
+
+.cardgroup#c9 .cardName {
+  width: 105px;
+}
+
+.cardgroup#c10 .cardName {
+  width: 163px;
+}
+
+.cardgroup#cBube .cardName {
+  width: 49px;
+}
+
+.cardgroup#cQueen .cardName {
+  width: 204px;
+}
+
+.cardgroup#cKing .cardName {
+  width: 190px;
+}
+
+.cardgroup#cAce .cardName {
+  width: 163px;
+}
+
+.cardgroup#c2 .cardName {
+  width: 150px;
+}
+
+.cardgroup#c3 .cardName {
+  width: 121px;
+}
+
+.cardgroup#c4 .cardName {
+  width: 137px;
+}
+
+.cardgroup#c5 .cardName {
+  width: 137px;
+}
+
+.cardgroup#c6 .cardName {
+  width: 91px;
+}
+
+.cardgroup#cJoker .cardName {
+  width: 63px;
 }
 
 .cardgroup .card {

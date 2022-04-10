@@ -605,8 +605,25 @@ section#skatCards{
     p {@include stdFont; grid-area: p; 
         align-self: flex-start;}
       
-    .cardName { image-rendering: pixelated; grid-area: headline; 
+    .cardName {grid-area: headline; 
         align-self: flex-end;}
+
+        &#c7 .cardName {width: 128px;}
+        &#c8 .cardName {width: 113px;}
+        &#c9 .cardName {width: 105px;}
+        &#c10 .cardName {width: 163px;}
+        &#cBube .cardName {width: 49px;}
+        &#cQueen .cardName {width: 204px;}
+        &#cKing .cardName {width: 190px;}
+        &#cAce .cardName {width: 163px;}
+        &#c2 .cardName {width: 150px;}
+        &#c3 .cardName {width: 121px;}
+        &#c4 .cardName {width: 137px;}
+        &#c5 .cardName {width: 137px;}
+        &#c6 .cardName {width: 91px;}
+        &#cJoker .cardName {width: 63px;}
+
+
       
     .card {
             grid-area: card; 
