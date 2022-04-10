@@ -36,8 +36,8 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  background: url("../img/DeckblattCards.svg") no-repeat center 0, -webkit-gradient(linear, left top, left bottom, from(#C7BDA5), color-stop(23.78%, #C7BDA5), color-stop(65.45%, #ECE9E2), to(#EFE5CB));
-  background: url("../img/DeckblattCards.svg") no-repeat center 0, linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
+  background: url("../img/headerImgSmall.svg") no-repeat center 0, -webkit-gradient(linear, left top, left bottom, from(#C7BDA5), color-stop(23.78%, #C7BDA5), color-stop(65.45%, #ECE9E2), to(#EFE5CB));
+  background: url("../img/headerImgSmall.svg") no-repeat center 0, linear-gradient(180deg, #C7BDA5 0%, #C7BDA5 23.78%, #ECE9E2 65.45%, #EFE5CB 100%);
 }
 
 @media (min-width: 650px) {
